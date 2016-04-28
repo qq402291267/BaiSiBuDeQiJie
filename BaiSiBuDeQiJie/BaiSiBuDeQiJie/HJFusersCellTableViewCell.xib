@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="HJFusersCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oqO-BG-DM2">
+                        <rect key="frame" x="10" y="22" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="bGe-wo-qat"/>
+                            <constraint firstAttribute="width" constant="50" id="pYk-jB-Sr0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbh-gy-w2z">
+                        <rect key="frame" x="80" y="22" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CW-8M-edj">
+                        <rect key="frame" x="80" y="57" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy0-jO-anL">
+                        <rect key="frame" x="254" y="32" width="46" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="7gJ-IM-43I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="+ 关注">
+                            <color key="titleColor" red="1" green="0.1025709877" blue="0.2261343385" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7CW-8M-edj" firstAttribute="leading" secondItem="oqO-BG-DM2" secondAttribute="trailing" constant="20" id="1Rj-8k-8wz"/>
+                    <constraint firstItem="Dy0-jO-anL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="73e-eh-R2J"/>
+                    <constraint firstItem="oqO-BG-DM2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Lld-Zf-NIa"/>
+                    <constraint firstAttribute="trailing" secondItem="Dy0-jO-anL" secondAttribute="trailing" constant="20" id="MJO-O1-C0V"/>
+                    <constraint firstItem="cbh-gy-w2z" firstAttribute="top" secondItem="oqO-BG-DM2" secondAttribute="top" id="Y5N-QL-ZZM"/>
+                    <constraint firstItem="cbh-gy-w2z" firstAttribute="leading" secondItem="oqO-BG-DM2" secondAttribute="trailing" constant="20" id="cxI-Zu-Rc5"/>
+                    <constraint firstItem="7CW-8M-edj" firstAttribute="bottom" secondItem="oqO-BG-DM2" secondAttribute="bottom" id="g8q-01-Jaf"/>
+                    <constraint firstItem="oqO-BG-DM2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ors-O6-Ckg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fansCountLabel" destination="7CW-8M-edj" id="S2Q-T2-CLG"/>
+                <outlet property="headerView" destination="oqO-BG-DM2" id="Kyk-jB-jGB"/>
+                <outlet property="nameLabel" destination="cbh-gy-w2z" id="r1O-6m-XDa"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="398"/>
+        </tableViewCell>
+    </objects>
+</document>
